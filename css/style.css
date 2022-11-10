@@ -1,0 +1,111 @@
+
+
+
+:root{
+    --primary-color: #dc407f;
+    --secondary: #f783ee;
+    --bg: #f9f7f8;
+    --white: #fff;
+    --black: #000;
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0; padding: 0 ;
+    box-sizing: border-box;
+    outline:none; border: none;
+    text-decoration:none;
+    text-transform: capitalize;
+    transition: .2s linear;
+
+}
+
+html{
+    font-size: 87.5%;
+    overflow:hidden;
+    scroll-padding-top:9rem;
+    scroll-behavior:smooth;
+
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+html::-webkit-scrollbar-track{
+    background:transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--primary-color);
+    border-radius: 5rem;
+}
+
+.header{
+    position:center;
+    top:0; left:0, right=0;
+    z-index:1000;
+    background: var(--bg);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+
+}
+
+.header .logo{
+    font-size: 20px;
+    font-weight: bolder;
+    color: var(--black);
+}
+
+.header .logo i{
+    color: var(--secondary);
+    padding-right: .9rem;
+    
+}
+
+.header .navbar a{
+    font-size:20px;
+    color:var(--black);
+    margin: 0 1rem;
+}
+
+.header .navbar a:hover{
+    color: var(--primary-color);
+}
+
+
+.header .icons div{
+    font-size: 1.5rem;
+    margin-left: 1.7rem;
+    color: var(--black);
+    cursor:pointer;
+}
+
+.header .icons div:hover{
+    color: var(--primary-color);
+}
+
+.submenu{
+    display:none;
+}
+.header .navbar a:hover .submenu 
+{
+    display:block;
+    position:absolute;
+    background: var(--bg);
+    margin-top: 15px;
+    margin-left: -15px;
+
+}
+
+.header .navbar a:hover .submenu ul{
+    display:block;
+    margin:10px;
+}
+#menu-btn{
+    display:none;
+}

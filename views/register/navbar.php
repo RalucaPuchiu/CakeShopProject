@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js">
-    <link rel="stylesheet" type="text/css" href="D:\CakeShop\css\style.css">
+    <link rel="stylesheet" type="text/css" href="D:\wamp64\www\CakeShop\css\style.css">
 
     </head>
 <body> 
@@ -26,7 +26,6 @@
               <a href="prajituri.html">prajituri</a>
               <a href="torturi.html">torturi</a>
               <a href="patiserie.html">patiserie</a>
-              <a href="candybar.html">candy bar</a>
               <a href="platouri.html">platouri</a>
               <a href="inghetata.html">înghețată</a>
              </div>

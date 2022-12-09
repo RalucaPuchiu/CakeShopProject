@@ -34,7 +34,7 @@
   </div>
 
   <div class="mySlides fade">
-    <img src="images/platou1.JPG" style="width:100%; height: 50%;" >
+    <img src="images/platouri1.JPG" style="width:100%; height: 50%;" >
   </div>
 
   <div class="mySlides fade">
@@ -44,13 +44,12 @@
   <div class="mySlides fade">
     <img src="images/patiserie2.JPG" style="width:100%; height: 50%;" >
   </div>
-
+  
   <div class="mySlides fade">
     <img src="images/inghetata.JPG" style="width:100%; height: 50%;" >
   </div>
 
- 
-</div>
+ </div>
 <br>
 
 <div style="text-align:center">
@@ -65,7 +64,7 @@
     <span class="dot"></span> 
     <span class="dot"></span> 
     <span class="dot"></span> 
-  
+    
 </div>
 
 
@@ -101,13 +100,13 @@
 		<td><img src = "images/8.jpg" style=" display:block; width:100%; height:100%"></td>
 		<td><h2>Placinta cu branza</h2><p class="p1">Placintă traditională romanească umplută cu branză de vaci, smântână și stafide</p>
         <div class="myDiv"  style="position:relative;  right:0px"><a style="text-decoration:none" href="index.php" >DETALII</a></div></td>
-		<td><img src = "images/9.jpg" style="display:block; width:100%; height:100%"></td>
+		<td><img src = "images/10.jpg" style="display:block; width:100%; height:100%"></td>
 		<td><h2>Fursec Piscotel</h2><p class="p1">Aromate, fragede, delicate se preteaza oricarui tip de eveniment</p>
         <div class="myDiv"  style="position:relative;  right:0px"><a style="text-decoration:none" href="index.php" >DETALII</a></div></td>
 </tr>
 
 <tr>
-		<td><img src = "images/10.jpg" style="display:block; width:100%; height:100%"></td>
+		<td><img src = "images/9.jpg" style="display:block; width:100%; height:100%"></td>
 		<td><h2>Inghetata de vanilie</h2><p class="p1">Poti avea parte de racoarea verii in orice moment al anului cu aceasta minunata inghetata de casa </p>
         <div class="myDiv"  style="position:relative;  right:0px"><a style="text-decoration:none" href="index.php" >DETALII</a></div></td>
 		<td><img src = "images/11.jpg" style=" display:block; width:100%; height:100%"></td>

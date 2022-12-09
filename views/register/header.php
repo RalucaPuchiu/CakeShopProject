@@ -27,7 +27,6 @@
               <a href="prajituri.php">prajituri</a>
               <a href="torturi.php">torturi</a>
               <a href="patiserie.php">patiserie</a>
-              <a href="candybar.php">candy bar</a>
               <a href="platouri.php">platouri</a>
               <a href="inghetata.php">înghețată</a>
              </div>
@@ -42,6 +41,7 @@
    <div class="icons">
     <div id="cart-btn" class="fas fa-shopping-cart"></div>
     <div id="user" class="fas fa-user"></div>
+    <div id="login" class="fa fa-sign-in"></div><a href="login.php" style="text-decoration: none;"></a>
    </div>
 </header> 
 

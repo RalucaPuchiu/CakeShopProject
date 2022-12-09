@@ -1,4 +1,45 @@
 <?php include_once('header.php');?>
+
+<section>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="images/i1.png" style="width:100%; height: 10%;" >
+</div>
+
+<div class="mySlides fade">
+  <img src="images/i2.png" style="width:100%; height: 10%;" >
+</div>
+
+<div class="mySlides fade">
+  <img src="images/i3.png" style="width:100%; height: 10%;" >
+</div>
+
+<div class="mySlides fade">
+  <img src="images/i4.png" style="width:100%; height: 10%;" >
+</div>
+
+
+  <div class="mySlides fade">
+    <img src="images/i5.png" style="width:100%; height: 10%;" >
+  </div>
+
+ </div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+   <span class="dot"></span> 
+   <span class="dot"></span> 
+ 
+    
+</div>
+
+<?php include_once('footer.php');?>
+
 <div class="row">
   <div class="column">
     <div class="card">

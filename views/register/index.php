@@ -22,34 +22,33 @@
 
 
   <div class="mySlides fade">
-    <img src="images/praji1.JPG" style="width:100%; height: 50%;" >
+    <img src="images/praji1.JPG" style=" display:block; width:100%; height: 50%;" >
   </div>
 
   <div class="mySlides fade">
-    <img src="images/praji2.JPG" style="width:100%; height: 50%;" >
+    <img src="images/praji2.JPG" style="display:block; width:100%; height: 50%;" >
   </div>
 
   <div class="mySlides fade">
-    <img src="images/praji3.JPG" style="width:100%; height: 50%;" >
+    <img src="images/praji3.JPG" style="display:block; width:100%; height: 50%;" >
   </div>
 
   <div class="mySlides fade">
-    <img src="images/platou1.JPG" style="width:100%; height: 50%;" >
+    <img src="images/platouri1.JPG" style="display:block; width:100%; height: 50%;" >
   </div>
 
   <div class="mySlides fade">
-    <img src="images/patiserie1.JPG" style="width:100%; height: 50%;" >
+    <img src="images/patiserie1.JPG" style="display:block; width:100%; height: 50%;" >
   </div>
 
   <div class="mySlides fade">
-    <img src="images/patiserie2.JPG" style="width:100%; height: 50%;" >
+    <img src="images/patiserie2.JPG" style="display:block; width:100%; height: 50%;" >
   </div>
 
   <div class="mySlides fade">
     <img src="images/inghetata.JPG" style="width:100%; height: 50%;" >
   </div>
 
- 
 </div>
 <br>
 
@@ -65,6 +64,7 @@
     <span class="dot"></span> 
     <span class="dot"></span> 
     <span class="dot"></span> 
+  
   
 </div>
 

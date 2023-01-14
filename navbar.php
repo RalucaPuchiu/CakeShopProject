@@ -15,31 +15,34 @@
     </head>
 <body> 
 
-   <header class="header">
-     <a href="#" class="logo" style="text-decoration: none;"> <i class="fas fa-birthday-cake"></i>Bombo CakeShop </a>
-    <nav class="navbar">
-        <a href="index.html" style="text-decoration: none;">Acasă</a>
-        <a href="about.html" style="text-decoration: none;">Despre noi</a>
-        <div class="dropdown">
-          <a href="#categories" style="text-decoration: none;">Categorii</a>
-            <div class="dropdown-content">
-              <a href="prajituri.html">prajituri</a>
-              <a href="torturi.html">torturi</a>
-              <a href="patiserie.html">patiserie</a>
-              <a href="platouri.html">platouri</a>
-              <a href="inghetata.html">înghețată</a>
-             </div>
+<header class="header">
+<a href="#" class="logo" style="text-decoration: none;"> <i class="fas fa-birthday-cake"></i>Bombo CakeShop </a>
+  <nav class="navbar">
+    <a href="index.html" style="text-decoration: none;">Acasă</a>
+    <a href="about.html" style="text-decoration: none;">Despre noi</a>
+    <div class="dropdown">
+      <a href="#categories" style="text-decoration: none;">Categorii</a>
+        <div class="dropdown-content">
+          <a href="prajituri.html">prajituri</a>
+          <a href="torturi.html">torturi</a>
+          <a href="patiserie.html">patiserie</a>
+          <a href="platouri.html">platouri</a>
+          <a href="inghetata.html">înghețată</a>
           </div>
+    </div>
          
-        <a href="gallery.html" style="text-decoration: none;">Galerie</a>
-        <a href="team.html" style="text-decoration: none;">Echipă</a>
-        <a href="review.html" style="text-decoration: none;">Recenzii</a>
+    <a href="gallery.html" style="text-decoration: none;">Galerie</a>
+    <a href="team.html" style="text-decoration: none;">Echipă</a>
+    <a href="review.html" style="text-decoration: none;">Recenzii</a>
        
    </nav>
 
-   <div class="icons">
-    <div id="cart-btn" class="fas fa-shopping-cart"></div>
-    <div id="user" class="fas fa-user"></div>
-   </div>
+<div class="icons">
+  <div id="cart-btn" class="fas fa-shopping-cart"></div>
+  <div id="user" class="fas fa-user"></div>
+
+</div>
+
+
 </header> 
 </body>

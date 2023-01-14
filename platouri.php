@@ -23,17 +23,15 @@ $result = mysqli_query($db, "SELECT * FROM product where category_id=4");
 while($data = mysqli_fetch_array($result))
 {
    ?>
-   <section class="cakes">
         <div class="card">
-            <div class="imaginedatabase"><img src="image/<?php echo $data['image']; ?>"width="200" height="200"> </div>
-            
+            <div class="img_display"><img src="images/<?php echo $data['image']; ?>"width="200" height="200"> </div>
             <h2> <?php echo $data['name']; ?></h2>
-            <p class="price">Pret: <?php echo $data['price']; ?></p>
+            <p class="price">Pret: <?php echo $data['price']; ?>lei/kg</p>
             <p><?php echo $data['description']; ?></p>
-            <p>Gramaj: <?php echo $data['weight']; ?></p>
-            <p>Stoc: <?php echo $data['stock']; ?></p>
+            <p>Gramaj: <?php echo $data['weight']; ?>g</p>
+            <p>Stoc: <?php echo $data['stock']; ?></p><br>
+            <div class="myDiv"  style="position:relative;  right:20px"><a style="text-decoration:none" href="contact.php" >Adauga in cos</a></div>
         </div>
-    </section>
 
     <?php
 }

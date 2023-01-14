@@ -24,17 +24,16 @@
         <div class="dropdown">
           <a href="categories.php" style="text-decoration: none;">Categorii</a>
             <div class="dropdown-content">
-              <a href="prajituri.php">prajituri</a>
-              <a href="torturi.php">torturi</a>
-              <a href="patiserie.php">patiserie</a>
-              <a href="platouri.php">platouri</a>
-              <a href="inghetata.php">înghețată</a>
+              <a href="prajituri.php">Prajituri</a>
+              <a href="torturi.php">Torturi</a>
+              <a href="patiserie.php">Patiserie</a>
+              <a href="platouri.php">Platouri</a>
+              <a href="inghetata.php">Inghețată</a>
              </div>
           </div>
          
         <a href="gallery.php" style="text-decoration: none;">Galerie</a>
         <a href="team.php" style="text-decoration: none;">Echipă</a>
-        <a href="review.php" style="text-decoration: none;">Recenzii</a>
        
    </nav>
 

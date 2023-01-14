@@ -5,12 +5,11 @@
 <section >
 <div class="row">
   <div class="column">
-  <h1>VIZIUNE   </h1>
-  <p class="p1"> Toti meritam un desert bun si un zambet larg!</p><br><br>
-  <img src="images/gif1.gif" style="width:80% ; height: 80%;">
+    <h1>VIZIUNE   </h1>
+    <p class="p1"> Toti meritam un desert bun si un zambet larg!</p><br><br>
+    <img src="images/gif1.gif" style="width:80% ; height: 80%;">
   </div>
   <div class="column">
-    
     <h1>MISIUNE</h1>
     <p class="p1">Imbinam ideile tale cu pasiunea noastra pentru a te bucura cu desertul pe care il meriti!</p>
     <img src="images/gif2.gif" style="width:50% ; height: 20%;">

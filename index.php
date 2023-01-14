@@ -1,6 +1,5 @@
+
 <?php include_once('header.php');?>
-
-
 <section>
 
 <div class="slideshow-container">
@@ -57,22 +56,21 @@
   <span class="dot"></span> 
   <span class="dot"></span> 
   <span class="dot"></span> 
-   <span class="dot"></span> 
-   <span class="dot"></span> 
-   <span class="dot"></span> 
-   <span class="dot"></span> 
-    <span class="dot"></span> 
-    <span class="dot"></span> 
-    <span class="dot"></span> 
-    <span class="dot"></span> 
-  
-  
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
 </div>
 
 
 <?php include_once('footer.php');?>
-<br><br>
 
+
+<br><br>
 <section >
 <div class="row">
   <div class="column">

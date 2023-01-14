@@ -5,24 +5,24 @@
 <div class="slideshow-container">
 
 <div class="mySlides fade">
-  <img src="images/i1.png" style="width:100%; height: 10%;" >
+  <img src="images/i1.png" width="1000" height="200">
 </div>
 
 <div class="mySlides fade">
-  <img src="images/i2.png" style="width:100%; height: 10%;" >
+  <img src="images/i2.png" width="1000" height="200" >
 </div>
 
 <div class="mySlides fade">
-  <img src="images/i3.png" style="width:100%; height: 10%;" >
+  <img src="images/i3.png" width="1000" height="200">
 </div>
 
 <div class="mySlides fade">
-  <img src="images/i4.png" style="width:100%; height: 10%;" >
+  <img src="images/i4.png" width="1000" height="200" >
 </div>
 
 
   <div class="mySlides fade">
-    <img src="images/i5.png" style="width:100%; height: 10%;" >
+    <img src="images/i5.png" width="1000" height="200" >
   </div>
 
  </div>
@@ -32,8 +32,8 @@
   <span class="dot"></span> 
   <span class="dot"></span> 
   <span class="dot"></span> 
-   <span class="dot"></span> 
-   <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
  
     
 </div>
@@ -58,12 +58,12 @@
     <div class="card">
       <img src="images/team.jpg" alt="Sarah" style="width:100%">
       <div class="container">
-        <h2>Sarah Jones</h2>
-        <p class="title">Casier
-        </p>
-        <p>Amabilitatea este cea mai de pret calitate a unui casier indragit.</p>
-        <p>sarah@bombo.com</p>
-        <p><button class="button"><a style="text-decoration:none" href="contact.php">Contact</button></p></a>
+      <h2>Sarah Jones</h2>
+      <p class="title">Casier
+      </p>
+      <p>Amabilitatea este cea mai de pret calitate a unui casier indragit.</p>
+      <p>sarah@bombo.com</p>
+      <p><button class="button"><a style="text-decoration:none" href="contact.php">Contact</button></p></a>
       </div>
     </div>
   </div>
@@ -72,11 +72,11 @@
     <div class="card">
       <img src="images/team3.jpg" alt="Emilly" style="width:100%">
       <div class="container">
-        <h2>Emilly Watson</h2>
-        <p class="title">Cofetar</p>
-        <p>Ingredientul secret al fiecarui produs este iubirea si pasiunea.</p>
-        <p>emilly@bombo.com</p>
-        <p><button class="button"><a style="text-decoration:none" href="contact.php">Contact</button></p></a>
+      <h2>Emilly Watson</h2>
+      <p class="title">Cofetar</p>
+      <p>Ingredientul secret al fiecarui produs este iubirea si pasiunea.</p>
+      <p>emilly@bombo.com</p>
+      <p><button class="button"><a style="text-decoration:none" href="contact.php">Contact</button></p></a>
       </div>
     </div>
   </div>

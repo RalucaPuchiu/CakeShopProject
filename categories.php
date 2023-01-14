@@ -71,7 +71,7 @@
 </div>
 <br><br><br>
 <p class="p1">Alege o categorie pentru a vizualiza produsele care iti vor indulci ziua</p><br><br>
-<img src="images/banner.png" style="width:500px;height:400px;"><br><br>
+<img src="images/banner.png" style="width:800px;height:400px;"><br><br>
 </section>
 <?php include_once('footer.php');?>
 <?php include_once('subsol.php');?>

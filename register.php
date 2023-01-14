@@ -1,111 +1,98 @@
-
-<?PHP
-require 'conn.php';
-if(!empty($_SESSION["user_id"])){
-    header("Location: index.php");
-}
-
-if(isset($_POST['submit'])) {
-
-$last_name = $_POST['last_name'];
-$first_name = $_POST['first_name'];
-$phone = $_POST['phone'];
-$email =$_POST['email'];
-$password =$_POST['password'];
-$confirmpassword= $_POST['confirmpassword'];
-$duplicate= mysqli_query($conn, "SELECT * FROM users WHERE email= '$email' ");
-if (mysqli_num_rows($duplicate)>0){
-    echo
-    "<script> alert('Emailul este deja utilizat'); </script>";
-}
-
-else{
-    if($password==$confirmpassword){
-        $query="INSERT INTO users VALUES('$last_name', '$first_name', '$phone', '$email', '$password')";
-        mysqli_query($conn, $query);
-        echo
-        "<script> alert('Inregistrare efectuata cu succes'); </script>";
-        header('location: index.php');
-    }
-    else{
-        echo 
-        "<script> alert('Parolele difera'); </script>";
-    }
-}
-
-}
-?>
-
 <?php include_once('header.php');?>
 <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-        <title>Pagina</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <link rel="stylesheet" href="css/style.css?version51">
-        <link rel="stylesheet" type="text/css" href="css\loginCSS.css">
-
-        <!-- <div class="body-content"> -->
+    <title>Pagina</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css\loginCSS.css">
 
 <div class="container">
     <div class="logo">
         <img src="images/cakeshopLogo.png " alt="Company Logo" srcset="">
     </div>
-    <h2>Inregistrare utilizator</h2>
-    <div class="login-form">
-        <form method="POST" >
-            
-            <div class="form-item">
-                
-                <input type="TEXT" name ="last_name" required placeholder="Nume"/>
-                
+    <h2>Inregistrare</h2>
+    <!-- <div class="login-form"> -->
+        <form method="POST" action="register.php" >
+            <div class="form-valori"> 
+                <input type="TEXT" name ="last_name" required placeholder="Nume"/>  
             </div>
-
-            <div class="form-item">
-                
+            <div class="form-valori">
                 <input type="TEXT" name ="first_name" required placeholder="Prenume"/>
-                
             </div>
-
-            <div class="form-item">
-                
-                <input type="tel" name ="phone" required placeholder="Telefon"/>
-                
+            <div class="form-valori">
+                <input type="TEXT" name ="phone" required placeholder="Telefon"/>
             </div>
-
-            <div class="form-item">
-                
+            <div class="form-valori">
                 <input type="TEXT" name ="email" required placeholder="Email"/>
-                
             </div>
-
-           
-
-            <div class="form-item">
-                
-                <input type="PASSWORD" name ="password" required placeholder="Parola"/>
-                
+            <div class="form-valori">
+                <input type="PASSWORD" name ="password_1" required placeholder="Parola"/>
             </div>
-
-            <div class="form-item">
-                        
-                        <input type="PASSWORD" name="confirmpassword" required placeholder="Repeta parola"/>
-						
-                    </div>
-
-            
-            
-            <div class="form-btns">
-
+            <div class="form-butoane">
                <input type="submit" name="submit" value="Inregistrare" required />
-             
-
-
             </div>
         </form>
-        <p>Copyright &copy; BomboCakeShop.com</p>
-    
     </div>
 </div>
 
+
+<?php 
+
+session_start();
+
+// initializing variables
+$first_name = "";
+$last_name="";
+$phone= "";
+$email= "";
+$errors = array(); 
+
+// connect to the database
+$db = mysqli_connect('localhost', 'root', '', 'cakeshop');
+
+// REGISTER USER
+if (isset($_POST['submit'])) {
+  // receive all input values from the form
+  $last_name = mysqli_real_escape_string($db, $_POST['last_name']);
+  $first_name = mysqli_real_escape_string($db, $_POST['first_name']);
+  $phone = mysqli_real_escape_string($db, $_POST['phone']);
+  $email = mysqli_real_escape_string($db, $_POST['email']);
+  $password_1 = mysqli_real_escape_string($db, $_POST['password_1']);
+  
+
+  // form validation: ensure that the form is correctly filled ...
+  // by adding (array_push()) corresponding error unto $errors array
+  if (empty($last_name)) { array_push($errors, "Last name is required"); }
+  if (empty($first_name)) { array_push($errors, "First name is required"); }
+  if (empty($phone)) { array_push($errors, "Phone is required"); }
+  if (empty($email)) { array_push($errors, "Email is required"); }
+  if (empty($password_1)) { array_push($errors, "Password is required"); }
+  
+
+  // first check the database to make sure 
+  // a user does not already exist with the same username and/or email
+  $user_check_query = "SELECT * FROM users WHERE last_name='$last_name' LIMIT 1";
+  $result = mysqli_query($db, $user_check_query);
+  $user = mysqli_fetch_assoc($result);
+  
+
+    if ($user['email'] === $email) {
+      array_push($errors, "email already exists");
+    }
+  
+
+  
+  // Finally, register user if there are no errors in the form
+  if (count($errors) == 0) {
+    
+    $password = md5($password_1);//encrypt the password before saving in the database
+
+    $query = "INSERT INTO users (user_id, last_name, first_name, phone, email, password) 
+              VALUES(null, '$last_name', '$first_name', '$phone', '$email', '$password')";
+    mysqli_query($db, $query);
+    $_SESSION['email'] = $email;
+    $_SESSION['success'] = "You are now logged in";
+    header('location: index.php');
+}
+}
+?>

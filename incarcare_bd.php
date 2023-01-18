@@ -1,38 +1,33 @@
 <?php
-?>
-<?php
   $msg = "";
+  include('conn.php');
   
-  
-
   // If upload button is clicked ...
   if (isset($_POST['upload'])) {
   
     $image = $_FILES["uploadfile"]["name"];
     $tempname = $_FILES["uploadfile"]["tmp_name"];    
     $folder = "images/".$image;
-          
-    $db = mysqli_connect("localhost", "root", "", "cakeshop");
    
-   
-    $name= $db->real_escape_string($_POST['name']);
-    $description = $db->real_escape_string($_POST['description']);
-    $price = $db->real_escape_string($_POST['price']);
-    $weight = $db->real_escape_string($_POST['weight']);
-    $stock = $db->real_escape_string($_POST['stock']);
+    $name= $conn->real_escape_string($_POST['name']);
+    $description = $conn->real_escape_string($_POST['description']);
+    $price = $conn->real_escape_string($_POST['price']);
+    $weight = $conn->real_escape_string($_POST['weight']);
+    $stock = $conn->real_escape_string($_POST['stock']);
+    $category_id = $conn->real_escape_string($_POST['category_id']);
+
     
-    $sql = $db->query("INSERT INTO product(name, description, price, weight, stock, image) VALUES ('$name', '$description', '$price', '$weight', '$stock','$image')");
+    $sql = $conn->query("INSERT INTO product(name, description, price, weight, stock, image, category_id) VALUES ('$name', '$description', '$price', '$weight', '$stock','$image', '$category_id')");
       
-  
-        mysqli_query($db, $sql);
+   mysqli_query($conn, $sql);
           
-        if (move_uploaded_file($tempname, $folder))  {
+      if (move_uploaded_file($tempname, $folder))  {
             $msg = "Image uploaded successfully";
-        }else{
+      }else{
             $msg = "Failed to upload image";
       }
   }
-  $result = mysqli_query($db, "SELECT * FROM product");
+$result = mysqli_query($conn, "SELECT * FROM product");
 while($data = mysqli_fetch_array($result))
 {
   echo "<h2>{$data['name']}</h2>";
@@ -41,27 +36,21 @@ while($data = mysqli_fetch_array($result))
   echo "<h2>{$data['weight']}</h2>";
   echo "<h2>{$data['stock']}</h2>";
 
-
-
       ?>
 
 
-<div class="imgdatabase"><img src="images/<?php echo $data['image']; ?>"width="150" height="100"> </div>
+<div class="img_display"><img src="images/<?php echo $data['image']; ?>"width="100" height="100"> </div>
   
 <?php
 }
 ?>
  
 
-
 <!DOCTYPE html>
 <html>
 <head>
 <title>Incarca date</title>
 <link rel="stylesheet" type= "text/css" href ="style.css"/>
-<section class="upload">
-<div id="content">
- 
   <form method="POST" action="" enctype="multipart/form-data">
       <input type="file" name="uploadfile" value=""/>
       <div class="form-item">        
@@ -78,15 +67,16 @@ while($data = mysqli_fetch_array($result))
        </div>
        <div class="form-item">          
              <input type="TEXT" name ="stock" required placeholder="Stoc:"/>				
-</div>
+      </div>
+      <div class="form-item">          
+             <input type="TEXT" name ="category_id" required placeholder="Categorie:"/>				
+      </div>
 
       <div>
           <button type="submit" name="upload">Incarca</button>
         </div>
   </form>
   
-</div>
-</section>
 </body>
 </html>
 
@@ -101,4 +91,4 @@ while($data = mysqli_fetch_array($result))
   margin-top: 8rem;
   text-align: center;
 }
-  </style>
+</style>

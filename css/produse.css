@@ -26,7 +26,7 @@ html{
 }
   
 html::-webkit-scrollbar{
-  width: .8rem;
+  width: .5rem;
 }
 
 html::-webkit-scrollbar-track{
@@ -38,52 +38,57 @@ html::-webkit-scrollbar-thumb{
   border-radius: 5rem;
 }
 
-/* .cakes {
-  display: flex;
-  flex-wrap: wrap;
+
+.column {
   float: left;
-} */
-
-.card {
+  padding: 0 10px;
+  width: 33.33%;
+}
   
+  /* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+  
+  /* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+  padding: 16px;
   text-align: center;
-  font-family: arial;
-  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.1);
-  padding: 2rem;
-  background-color:#f4bcf5;
-  min-height: 200px;
-  max-width: 300px; 
-  margin: 5px;
-  display: inline-block;
-} 
+  background-color:#fff;
+  height: calc(150vh/2);
+}
 
-  /* .cakes {
-    padding: 2rem 5%;
+.card-body{
+  font-size:1rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  height: calc(50vh/2);
+}
+  
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
   }
-
-  .flex{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-  }
-
-  .card{
-    background: #f9f7f8;
-    padding: 15px 20px;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-  } */
+}
 
 .card h3{
     font-size: 2rem;
 }
 
-.card p {
+p {
   font-size: 10px;
-  color:#fff;
+  color:rgb(23, 22, 22);
 }
   
-.price {
-  color: grey;
+.pret {
+  color: rgb(197, 50, 128);
   font-size: 15px;
 }
 
@@ -92,17 +97,20 @@ html::-webkit-scrollbar-thumb{
 }
   
 .myDiv {
-  background-color: palevioletred;
+  background: palevioletred;
+  color: #fff;
   text-align: center;
   border-radius:8px;
-  position: absolute; 
-  left: 0; 
-  right: 0; 
   margin-left: auto; 
   margin-right: auto;
   width:130px; height: 20px;
+
 }
-      
+.myDiv:hover{
+  background-color: peachpuff;
+  color: black;
+}
+
 a
 {
   color:white;
@@ -111,13 +119,12 @@ a
   text-transform: none;
 }
 
-a:hover {
-  background-color: var(--primary-color)
-}
+
       
 h2{
   font-size: 20px;
   font-style: italic;
   font-family:'Times New Roman', Times, serif;
   color: #dc407f;
+  text-transform: none;
 }

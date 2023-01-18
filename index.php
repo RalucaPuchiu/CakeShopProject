@@ -67,8 +67,27 @@
 </div>
 
 
-<?php include_once('footer.php');?>
+<?php include_once('footer.php');?><br>
+<?php 
+  session_start(); 
 
+  if (!isset($_SESSION['email'])) {
+  	$_SESSION['msg'] = "You must log in first";
+  	header('location: login.php');
+  }
+  if (isset($_GET['logout'])) {
+  	session_destroy();
+  	unset($_SESSION['email']);
+  	header("location: login.php");
+  }
+?>
+
+
+    <!-- logged in user information -->
+    <?php  if (isset($_SESSION['email'])) : ?>
+    	<p>Bine ai venit, <strong><?php echo $_SESSION['email']; ?></strong>!</p>
+    	<p> <a href="index.php?logout='1'" style="color: #f584cc;">logout</a> </p>
+    <?php endif ?>
 
 <br><br>
 <section >

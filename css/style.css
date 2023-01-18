@@ -15,7 +15,7 @@ body{
   box-sizing: border-box;
   outline:none; border: none;
   text-decoration:none;
-  text-transform: capitalize;
+  text-transform: none;
   transition: .2s linear;
   background-color: #f8eef3;
 
@@ -217,12 +217,15 @@ blockquote{
   padding: 0 8px;
 }
 
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  
 }
 
 .container {
   padding: 0 16px;
+  
 }
 
 .container::after, .row::after {
@@ -295,15 +298,6 @@ img {
 }
 
 
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-
 .dot {
   height: 15px;
   width: 15px;
@@ -368,3 +362,9 @@ h2{
   color: #dc407f;
 }
 
+h2{
+  font-size: 25px;
+  font-style: italic;
+  font-family:'Times New Roman', Times, serif;
+  color: #dc407f;
+}

@@ -5,19 +5,19 @@
 <section >
 <div class="row">
   <div class="column">
-    <h1>VIZIUNE   </h1>
+    <h2>VIZIUNE   </h2>
     <p class="p1"> Toti meritam un desert bun si un zambet larg!</p><br><br>
     <img src="images/gif1.gif" style="width:80% ; height: 80%;">
   </div>
   <div class="column">
-    <h1>MISIUNE</h1>
+    <h2>MISIUNE</h2>
     <p class="p1">Imbinam ideile tale cu pasiunea noastra pentru a te bucura cu desertul pe care il meriti!</p>
     <img src="images/gif2.gif" style="width:50% ; height: 20%;">
   
     
   </div>
   <div class="column">
-    <h1>VALORI</h1>
+    <h2>VALORI</h2>
     <p class="p1">PASIUNEA –Ne place ceea ce facem si suntem atenti la dorintele voastre<br>
                   INTEGRITATEA – alegem sa facem ceea ce este corect, nu ceea ce este usor<br>
                   CALITATEA – Respectam oamenii cu care lucram si pentru care lucram<br>
@@ -46,8 +46,6 @@ Intrucat deviza Cofetariei Bombo este “Creat cu pasiune” ne propunem sa imbu
       </article>
     </div>
   </div>
-<br>
- 
 </body>
 
 <?php include_once('subsol.php');?>

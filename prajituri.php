@@ -23,15 +23,19 @@ $result = mysqli_query($db, "SELECT * FROM product where category_id=1");
 while($data = mysqli_fetch_array($result))
 {
 ?>
+<div class="row">
+    <div class="column">
     <div class="card" >
         <div class="img_display"><img src="images/<?php echo $data['image']; ?>"width="200" height="200"> </div>
+        <div class="card-body">
         <h2> <?php echo $data['name']; ?></h2>
-        <p class="price">Pret: <?php echo $data['price']; ?>lei</p>
+        <p class="pret">Pret: <?php echo $data['price']; ?>lei</p>
         <p><?php echo $data['description']; ?></p>
         <p>Gramaj: <?php echo $data['weight']; ?>g</p>
-        <p>Stoc: <?php echo $data['stock']; ?></p><br>
-        <div class="myDiv"  style="position:relative;  right:20px"><a style="text-decoration:none" href="contact.php" >Adauga in cos</a></div>
+        <p>Stoc: <?php echo $data['stock']; ?></p></div>
+        <div class="myDiv" ><a style="text-decoration:none" href="cart.php" >Adauga in cos</a></div>
     </div>
+</div>
 
 <?php
 }

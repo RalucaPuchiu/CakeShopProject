@@ -56,7 +56,7 @@
 
   <div class="column">
     <div class="card">
-      <img src="images/team.jpg" alt="Sarah" style="width:100%">
+      <img src="images/team.jpg" alt="Sarah" style="width:90%">
       <div class="container">
       <h2>Sarah Jones</h2>
       <p class="title">Casier

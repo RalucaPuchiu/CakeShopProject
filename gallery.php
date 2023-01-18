@@ -73,7 +73,7 @@
 <table class="table3">
 <tr>
 	<td><img  src = "images/1.jpg" style="display:block; width:90%; height:90%"></td>
-	<td><h2>stracciatella</h2><p class="p1">Blat fin, insiropat cu lapte si gust intens de sirop de agave</p>
+	<td><h2>Stracciatella</h2><p class="p1">Blat fin, insiropat cu lapte si gust intens de sirop de agave</p>
     <div class="myDiv"  style="position:relative;  right:0px"><a style="text-decoration:none" href="prajituri.php" >DETALII</a></div></td>
 	<td><img  src = "images/2.jpg" style="display:block; width:90%; height:90%"></td>
 	<td><h2>Le passion</h2><p class="p1">Exotica, dulce, cu gust intens de fructe</p>

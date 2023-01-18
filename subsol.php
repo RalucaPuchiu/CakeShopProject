@@ -1,41 +1,36 @@
-<div class="bg text-white" style="background: #f7bef5; min-height: 10px; padding-top: 50px;">
-<div class="container py-5" style="max-width: 1200px">
-<div class="row">
-<div class="col-12 col-md-6 col-lg-4 mb-4 mb-md-0">
-    <table class="table text-white table-sm">
-        <tr>
-            <th class="border-0 text-center" colspan="2">
-                <h3 class="text-pink">Cofetaria Bombo</h3>
-            </th>
-        </tr>
-        <tr style="line-height: 1">
-            <th class="text-right">Asistență <br>comenzi online:</th>
-            <td style="line-height: 1.1; padding-top: 8px">
-                <div class="mb-3"><a href="tel:+40765783229" class="text-pink"><i class="fa fa-phone-square-alt"></i> 0785 688 229</a></div>
-                <div class="mb-3"><a href="tel:+40757787802" class="text-pink"><i class="fa fa-phone-square-alt"></i> 0767 867 802</a></div>
-                <small>(zilnic, 9:00 - 20:00)</small>
-            </td>
-        </tr>
-    </table>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/14a87917b7.js" crossorigin="anonymous"></script>
+    <title>Subsol</title>
+    <link rel="stylesheet" type="text/css" href="css\subsol.css">
+</head>
+<body>
+    <div class="footer">
+        <div class="column">
+            <h1>Cofetaria Bombo</h1>
+            <p>Asistenta online:</p>
+            <a href="tel:+40765783229" class="text-pink"><i class="fa fa-phone-square-alt"></i> 0785 688 229</a>
+            <a href="tel:+40757787802" class="text-pink"><i class="fa fa-phone-square-alt"></i> 0767 867 802</a>
+            <small>(zilnic, 9:00 - 20:00)</small>
+        </div>
 
-    <div class="text-center" >
-        <a href="https://www.facebook.com/CofetariaBombo" target="_blank" class="text-pink">
-            <i class="fa-2x fa-facebook-square fab mr-2"></i></a>
-        <a href="https://www.instagram.com/cofetariabombo.ro/" target="_blank" class="text-pink" >
-            <i class="fa-2x fa-instagram fab"></i></a>
-    </div>
-    </div>
-    <div class="col-12 col-md-6 col-lg-4 mb-4 mb-md-0">
-    <table class="table text-white table-sm">
+        <div class="column">
+            <h1>Adresa</h1>
+            <p>Soseaua Branului, nr. 28, Zarnesti<br>Zilnic:8:00-21:00 </p>
+            <div class="social-icons">
+            <a href="https://www.facebook.com/CofetariaBombo" target="_blank" class="text-pink">
+                <i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/cofetariabombo.ro/" target="_blank" class="text-pink" >
+                <i class="fab fa-instagram"></i></a>
+            </div>  
+        </div>
 
-    <tr>
-    <th class="text-center border-0" colspan="2">
-        <h3 class="text-pink mb-0">Locatia Soseaua Branului, nr. 28, Zarnesti</h3>
-    </th>
-    </tr>
-    <tr>
-    <td colspan="2" class="border-0 pt-0 text-center">Zilnic: 08:00-21:00</td>
-    </tr>
-  
-    </table>
-    </div>
+        <div class="column">
+        <div class="mapouter"><div class="gmap_canvas"><iframe width="300" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=Zarnesti,%20Brasov&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net"></a><br><style>.mapouter{position:relative;text-align:right;height:300px;width:300px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:300px;}</style></div></div>
+        </div>
+</div>
+
+</body>
+</html>
